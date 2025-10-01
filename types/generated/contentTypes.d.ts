@@ -389,13 +389,11 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       Schema.Attribute.DefaultTo<'\u00C9quipe Kalevia'>;
     category: Schema.Attribute.Enumeration<
       [
-        '\u00C9pargne & Placements',
-        'Immobilier',
+        'Economie',
+        'Investissement financier',
+        'Investissement immobilier',
+        'Guide',
         'Fiscalit\u00E9',
-        'Investissement & March\u00E9s',
-        'Protection',
-        'International',
-        'Dirigeants',
       ]
     > &
       Schema.Attribute.Required;
@@ -403,7 +401,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    datePublicatio: Schema.Attribute.DateTime & Schema.Attribute.Required;
+    datePublication: Schema.Attribute.DateTime & Schema.Attribute.Required;
     excerpt: Schema.Attribute.Text & Schema.Attribute.Required;
     featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

@@ -37,13 +37,11 @@
       "type": "enumeration",
       "required": true,
       "enum": [
-        "Épargne & Placements",
-        "Immobilier",
-        "Fiscalité",
-        "Investissement & Marchés",
-        "Protection",
-        "International",
-        "Dirigeants"
+        "Economie",
+        "Investissement financier",
+        "Investissement immobilier",
+        "Guide",
+        "Fiscalité"
       ]
     },
     "readingTime": {
@@ -63,7 +61,7 @@
       "min": 0,
       "max": 0
     },
-    "datePublicatio": {
+    "datePublication": {
       "type": "datetime",
       "required": true
     }
